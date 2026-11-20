@@ -1,0 +1,12 @@
+{
+  "name": "rank-eval",
+  "version": "1.0.0",
+  "private": true,
+  "description": "排序结果评估应用：多版本 × 多群体的曝光/点击/位置分布对比，约束阈值、缺失标签、时间窗口、影响报告、审批与回放",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "test": "node --test test/"
+  }
+}

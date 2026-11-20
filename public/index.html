@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>排序结果评估平台</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <h1>排序结果评估平台</h1>
+  </div>
+  <nav class="tabs" id="tabs" aria-label="主导航">
+    <button data-tab="datasets" class="tab">数据集</button>
+    <button data-tab="evaluations" class="tab">评估</button>
+    <button data-tab="compare" class="tab">版本对照</button>
+    <button data-tab="reports" class="tab">影响报告</button>
+    <button data-tab="approvals" class="tab">审批记录</button>
+    <button data-tab="revisions" class="tab">样本修订</button>
+  </nav>
+  <div class="identity">
+    <label for="user-select">当前身份</label>
+    <select id="user-select" aria-label="切换用户角色"></select>
+    <span id="role-badge" class="role-badge"></span>
+  </div>
+</header>
+
+<main id="main" class="main" tabindex="-1"></main>
+
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<div id="toast" class="toast" role="alert" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
